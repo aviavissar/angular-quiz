@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="components/list.component/list.component.css">
+
+<div ng-hide="$ctrl.questionsAreFinished" class="question">{{$ctrl.questionText}}</div>
+
+<div id="answers-wrapper" class="answers" ng-hide="$ctrl.questionsAreFinished">
+    <div class="answer" ng-repeat="answer in $ctrl.questionOptions track by $index">
+        <input type="radio" id="{{'answer' + $index}}" name="answer" value=" {{answer.optionScore}}" /> <label for="huey">{{answer.optionText}}</label>
+    </div>
+        <br>
+</div>
+
+<div class="button" ng-hide="$ctrl.questionsAreFinished"><button  ng-click="$ctrl.onAnswerChoose()">OK</button></div>
+<div class="resolte" ng-show="$ctrl.questionsAreFinished" >
+    <h2>the results</h2>
+    <h4>The test took you {{ $ctrl.counterTime.minutes }} minutes and {{ $ctrl.counterTime.seconds }} seconds
+        <br>
+    the number of points you eran are : {{$ctrl.score}}</h4>
+    {{$ctrl.resolte}}
+    </h4>
+
+</div>

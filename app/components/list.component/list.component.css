@@ -1,0 +1,16 @@
+.question{
+    margin:10px 0;
+    font-weight: bolder;
+    height: 50px;
+  }
+  .answer{
+    margin:10px 0; 
+  }
+  .answers{
+    height: 250px;
+    padding: 10px;
+  }
+  
+  .resolte{
+    margin:10px 0;
+  }

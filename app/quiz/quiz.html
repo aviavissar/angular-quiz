@@ -1,0 +1,15 @@
+<div class="wrap">
+    <div ng-if="$ctrl.isQuizMode">
+        <h3><timer-component is-quiz-done="$ctrl.isQuizDone" on-time-changed="$ctrl.onTimeChanged(time)"></timer-component></h3>
+      <br><br>
+      
+      <list-component ng-if="$ctrl.listIsReady" counter-time="$ctrl.counterTime" on-questions-finish="$ctrl.onQuestionsFinish()" questions-data="$ctrl.questions" ></list-component>
+    </div>
+  <div class="align-to-center border" ng-if="!$ctrl.isQuizMode">
+    <span>
+        Welcome to the quiz! When you are ready just hit the start button.
+    </span>
+    <br>
+    <button class="button" type="button" ng-click="$ctrl.onStartTest()">Start!</button>
+  </div>
+</div>

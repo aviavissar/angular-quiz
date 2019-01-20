@@ -1,0 +1,52 @@
+/* app css stylesheet */
+
+html, body {
+  height: 100%;
+}
+
+.flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  padding: 20px;
+  margin: 0;
+  background-color: #f7efe7;
+  font-size: 14px;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.border {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.align-to-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button{
+  display: flex;
+  justify-content: space-evenly;
+  background: rgb(230, 229, 229);
+ width: 150px;
+  border-radius: 5px;
+  margin: 10px auto;
+  height: 50px;
+}
+button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
